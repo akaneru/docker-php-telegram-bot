@@ -7,7 +7,7 @@ services:
       - './logs/database-server:/var/log/mysql'
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_USER: non-root-user
+      MYSQL_USER: nonrootuser
       MYSQL_PASSWORD: non-root-password
       MYSQL_DATABASE: telegram_bot
   web-server:
