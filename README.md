@@ -20,7 +20,7 @@ In this environment will be used the official docker images:
 
 ### Clone this repository
 
-    $ git clone https://github.com/php-telegram-bot/core
+    $ git clone https://github.com/akaneru/docker-php-telegram-bot.git
 
 ### Choose and set mysql database credentials in the following files (obviously these must be the same in both files)
 
@@ -81,7 +81,7 @@ Delete sample commands contained in the ./bot/src/Commands/ path: by default the
 
     (todo)
 
-## logs
+## Logs
 
 In the ./bot/logs folder you will find all log's from php-telegram-bot library and in the ./logs folder you will find both the web and database server logs.
 
