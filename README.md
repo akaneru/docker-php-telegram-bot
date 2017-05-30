@@ -20,7 +20,7 @@ In this environment will be used the official docker images:
 
 ### Clone this repository
 
-    $ git clone https://github.com/akaneru/docker-php-telegram-bot.git
+    $ git clone https://github.com/akaneru/docker-php-telegram-bot.git .
 
 ### Choose and set mysql database credentials in the following files (obviously these must be the same in both files)
 
