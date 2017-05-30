@@ -1,0 +1,11 @@
+[mysqld]
+
+# slow query log
+slow_query_log      = on
+slow_query_log_file = /var/log/mysql/slow.log
+
+# error log
+log-error           = /var/log/mysql/error.log
+
+# sql mode
+sql_mode            = ""

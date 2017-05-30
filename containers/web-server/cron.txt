@@ -1,0 +1,5 @@
+# test file
+*/1 * * * * date > /home/bot/cron-test.txt
+
+# bot
+*/1 * * * * /usr/local/bin/php /var/www/src/cli.php

@@ -1,0 +1,8 @@
+{
+    "name": "me/bot",
+    "type": "project",
+    "require": {
+        "php": ">=7.1",
+        "longman/telegram-bot": "^0.44.1"
+    }
+}

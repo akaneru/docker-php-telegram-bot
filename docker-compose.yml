@@ -1,0 +1,22 @@
+version: '2'
+services:
+  database-server:
+    build: ./containers/database-server
+    volumes:
+      - './database/data:/var/lib/mysql'
+      - './logs/database-server:/var/log/mysql'
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: non-root-user
+      MYSQL_PASSWORD: non-root-password
+      MYSQL_DATABASE: telegram_bot
+  web-server:
+    build: ./containers/web-server
+    links:
+      - database-server
+    ports:
+      - '4000:80'
+    volumes:
+      - './bot:/var/www'
+      - './logs/web-server:/var/log/apache2'
+    working_dir: '/var/www'
